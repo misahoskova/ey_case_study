@@ -81,7 +81,7 @@ ey_case_study/
   - `models/random_forest_optimized.joblib`
   - `models/decision_tree_optimized.joblib`
 - Ladit Linear Regression nemělo moc smysl
-  - málo paramterů
+  - málo parametrů
 
 ## Výsledky
 
@@ -123,7 +123,7 @@ python dt_hyperparameters_tuning.py
 
 ## Testy
 
-- jsou psané pro funkce ze souboru `preprocessing.py`.
+- jsou psané pro funkce ze souboru `preprocessing.py`
 
 ```bash
 python -m unittest test_preprocessing.py
