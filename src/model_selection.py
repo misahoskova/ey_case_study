@@ -50,3 +50,6 @@ os.makedirs("../models", exist_ok = True)
 model_path = f"../models/{best_name.lower().replace(' ', '_').lower()}.joblib"
 joblib.dump(best_model, model_path)
 print(f"\nBest model: {best_name} saved to {model_path}")
+
+pd.DataFrame(results).drop("model", axis = 1).to_csv("models/model_metrics.csv", index = False)
+print("\nModel metrics saved to models/model_metrics.csv")
