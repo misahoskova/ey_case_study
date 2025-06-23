@@ -35,6 +35,7 @@ search.fit(X_train, y_train)
 best_model = search.best_estimator_
 
 y_pred = best_model.predict(X_test)
+
 mae = mean_absolute_error(y_test, y_pred)
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)

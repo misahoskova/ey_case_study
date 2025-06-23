@@ -17,7 +17,7 @@ param_dist = {
     "n_estimators": [50, 100, 200],
     "max_depth": [5, 10, 20, None],
     "min_samples_split": [2, 5, 10],
-    "max_features": ["auto", "sqrt", "log2"]
+    "max_features": ["sqrt", "log2, None"]
 }
 
 rf = RandomForestRegressor(random_state = 42, n_jobs = -1)
