@@ -108,14 +108,23 @@ cd flat-price-prediction
 pip install -r requirements.txt
 ```
 
-### 3. Spuštění hlavního skriptu pro předzpracování dat
+### 3. Spuštění hlavního skriptu pro předzpracování dat a vykreslení modelů
 
 ```bash
 python main.py
 ```
 
-## Testy
+### 4. Spuštění skriptů pro lazení hyperparametrů
 
 ```bash
-python -m unittest discover tests
+python rf_hyperparameters_tuning.py
+python dt_hyperparameters_tuning.py
+```
+
+## Testy
+
+- jsou psané pro funkce ze souboru `preprocessing.py`.
+
+```bash
+python -m unittest test_preprocessing.py
 ```

@@ -1,14 +1,16 @@
 import pandas as pd
 import re
-from sklearn.preprocessing import StandardScaler
 
-def load_merge_data(part1_path: str, part2_path: str, sep: str = ";") -> pd.DataFrame:
+from sklearn.preprocessing import StandardScaler
+from typing import Union, IO
+
+def load_merge_data(part1_path: Union[str, IO], part2_path: Union[str, IO], sep: str = ";") -> pd.DataFrame:
     df1 = pd.read_csv(part1_path, sep = sep)
-    df2 = pd.read_csv(part2_path, sep = sep, header = None)
+    df2 = pd.read_csv(part2_path, sep = sep, header =None)
 
     df2.columns = df1.columns
-
-    df = pd.concat([df1, df2], ignore_index = True)
+    df = pd.concat([df1, df2], ignore_index=True)
+    
     return df
 
 def clean_dataframe(df: pd.DataFrame) -> pd.DataFrame:
