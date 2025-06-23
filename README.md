@@ -111,14 +111,14 @@ pip install -r requirements.txt
 ### 3. Spuštění hlavního skriptu pro předzpracování dat a vykreslení modelů
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 ### 4. Spuštění skriptů pro lazení hyperparametrů
 
 ```bash
-python rf_hyperparameters_tuning.py
-python dt_hyperparameters_tuning.py
+python3 rf_hyperparameters_tuning.py
+python3 dt_hyperparameters_tuning.py
 ```
 
 ## Testy
@@ -126,5 +126,5 @@ python dt_hyperparameters_tuning.py
 - jsou psané pro funkce ze souboru `preprocessing.py`
 
 ```bash
-python -m unittest test_preprocessing.py
+python3 test_preprocessing.py
 ```
